@@ -1,3 +1,4 @@
+
 function showNumber(){
   alert(' +996 (312) 63 14 25');
 }
@@ -15,6 +16,3 @@ setTimeout(() => {
   }
 }, 2000);
 
-$ (document).ready(function (){
-    alert("jquery is loading")
-});

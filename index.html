@@ -6,7 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/script.js"></script>
+	<script src="js/jquery-3.5.1.js">
+	</script>
 	<title>FinalExam</title>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeToggle();
+				$("#div2").fadeToggle("slow");
+				$("#div3").fadeToggle(3000);
+			});
+		});
+	</script>
 </head>
 <body>
 	<!-- Navbar -->
@@ -67,13 +78,12 @@
 					<div class="col-md-6"> 
 						<h1>ALA-TOO INTERNATIONAL UNIVERSITY</h1>
 						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
-							<li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
-							<li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li>
-							<li>Solo albtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
-							<li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </li>
-							<li>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</li>
-							<li>proident, sunt in culpa qui officia deserunt mollit anim id est  laborum.</li>
+							<li>Our university consists of five blocks, where there are classrooms and laboratories equipped with Internet</li>
+							<li> Our "Campus" is an educational center with a library, a conference hall, 3 stadiums, 1 tennis cord, 1 gym, 6 computer classes, 1 Internet club, 1 research center, 2 cantinas, 1 medical center.</li>
+							<li>  There are 4 faculties, 3 institutes and 16 departments in AIU.</li>
+							<li>The main language of instruction is English. Russian, Kyrgyz and Turkish are auxiliary languages. </li>
+							<li> Students from more than 20 countries study at the university.</li>
+							<li> In order to strengthen its position on market of education, the university is working on the opening of new educational programs that are in demand in the new information and competitive job market.</li>
 						</ul>
 				    </div>
 					<div class="col-md-6">
@@ -94,9 +104,9 @@
 				<a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
 			</p>
 
-			<button class="cookie-btn">
-				Okay
-			</button>
+			<button class="cookie-btn"> Okay</button><br><br>
+			<div id="div1" >Press Okay to see animation</div>
+			<br>
 		</div>
 
 
@@ -121,12 +131,6 @@
 		      </li>
 		    </ul>
 		  </div>
-			<script src="js/jquery-3.5.1.js">
-			</script>
-			<script src="js/script.js">
-			</script>
-
-
 			<!-- Copyright -->
 		  <div class="footer-copyright text-center py-3 footer-bg">© 2020 Copyright:
 		    <a href="#">alatoo.edu.kg</a>
